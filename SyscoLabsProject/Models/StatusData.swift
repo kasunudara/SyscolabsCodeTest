@@ -11,7 +11,7 @@ class StatusData: NSObject, ObservableObject {
     
     @Published var isAppReadyFirstLounch: Bool = false
     @Published var currentPageCount: Int = 1
-
+    
     static let sharedInstance = StatusData()
     
     private override init() {

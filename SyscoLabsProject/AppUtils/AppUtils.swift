@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Alamofire
 
 struct AppUtils {
     
@@ -17,4 +18,10 @@ struct AppUtils {
         return UIScreen.main.bounds.height
     }
     
+    struct Connectivity {
+        static let sharedInstance = NetworkReachabilityManager()!
+        static var isConnectedToInternet:Bool {
+            return self.sharedInstance.isReachable
+        }
+    }
 }

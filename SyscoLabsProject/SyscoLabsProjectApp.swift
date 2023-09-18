@@ -14,7 +14,6 @@ struct SyscoLabsProjectApp: App {
     
     @ObservedObject private var splashViewModel = SplashViewModel()
 
-    
     init() {
         self.splashViewModel.firstPlanetsPageLoader()
     }

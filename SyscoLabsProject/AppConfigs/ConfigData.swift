@@ -16,4 +16,9 @@ struct ConfigData {
         static let pageURL = server + "/api/planets/?page="
     }
     
+    struct NOTIFICATION_KEYS {
+        static let initialLoadCompleted = "PLANETS_DATA_PAGE_ONE_COMPLETED"
+        static let nextPageLoadCompleted = "PLANETS_DATA_NEXT_PAGE_COMPLETED"
+    }
+    
 }

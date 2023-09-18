@@ -14,7 +14,7 @@ class SplashViewModel : ObservableObject {
     
     func firstPlanetsPageLoader () {
         self.jsonDataHandlling.getAllPlanetsData(pageUrl: ConfigData.URLS.baseURL) {
-            NotificationCenter.default.post(name: Notification.Name("PLANETS_DATA_PAGE_ONE_COMPLETED"), object: nil)
+            NotificationCenter.default.post(name: Notification.Name(ConfigData.NOTIFICATION_KEYS.initialLoadCompleted), object: nil)
         }
     }
     

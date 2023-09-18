@@ -13,7 +13,7 @@ struct PlanetsHomeView : View {
     @State private var isAnimating: Bool = false
     @ObservedObject private var planetsHomeViewModel = PlanetsHomeViewModel()
     @ObservedObject var planetsData = PlanetsData.sharedInstance
-    let planetsNextPageCompleted = NotificationCenter.default.publisher(for: NSNotification.Name("PLANETS_DATA_NEXT_PAGE_COMPLETED"))
+    let planetsNextPageCompleted = NotificationCenter.default.publisher(for: NSNotification.Name(ConfigData.NOTIFICATION_KEYS.nextPageLoadCompleted))
     let jsonDataHandlling = JSONDataServices()
     
     var body: some View {

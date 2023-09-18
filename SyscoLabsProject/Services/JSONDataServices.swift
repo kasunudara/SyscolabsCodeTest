@@ -12,6 +12,24 @@ class JSONDataServices {
     
     let planetsData = PlanetsData.sharedInstance
     
+    //MARK: - Check Next Page Avilability
+    func checkAvilabilityOfNextPage(pageUrl:String,currentPageCount:Int,completion: @escaping (Bool) -> Void)  {
+        AF.request(pageUrl+String(currentPageCount), method: .get, parameters: nil, encoding: URLEncoding.default, headers: nil, interceptor: nil).responseJSON { response in
+            switch response.result {
+            case .success(let data):
+                if let outcome = data as? NSDictionary {
+                    if outcome["next"] is String {
+                        completion(true)
+                    } else {
+                        completion(false)
+                    }
+                }
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
+    }
+    
     //MARK: - Get Planet data for first loading
     func getAllPlanetsData(pageUrl:String,completion: @escaping () -> Void) {
         AF.request(pageUrl, method: .get, parameters: nil, encoding: URLEncoding.default, headers: nil, interceptor: nil).responseJSON { response in
@@ -64,23 +82,7 @@ class JSONDataServices {
         }
     }
     
-    //MARK: - Check Next Page Avilability
-    func checkAvilabilityOfNextPage(pageUrl:String,currentPageCount:Int,completion: @escaping (Bool) -> Void)  {
-        AF.request(pageUrl+String(currentPageCount), method: .get, parameters: nil, encoding: URLEncoding.default, headers: nil, interceptor: nil).responseJSON { response in
-            switch response.result {
-            case .success(let data):
-                if let outcome = data as? NSDictionary {
-                    if outcome["next"] is String {
-                        completion(true)
-                    } else {
-                        completion(false)
-                    }
-                }
-            case .failure(let error):
-                print(error.localizedDescription)
-            }
-        }
-    }
+    
 }
 
 
@@ -105,34 +107,4 @@ class JSONDataServices {
 
 
 
-
-
-
-
-//MARK: - JSON Page Iternation
-//    func getAllPlanetsPages() {
-//        AF.request("https://swapi.dev/api/planets", method: .get, parameters: nil, encoding: URLEncoding.default, headers: nil, interceptor: nil).responseJSON { response in
-//            switch response.result {
-//            case .success(let data):
-//                let jsonDictionary = data as! NSDictionary
-//                let mainResultArray = jsonDictionary["next"] as! String
-//
-//                print("Check next URL \(mainResultArray)")
-//
-//            case .failure(let error):
-//                print(error.localizedDescription)
-//            }
-//        }
-//    }
-
-
-
-
-
-
-
-
-//                        print("\(contentObject["climate"] as! String)")
-//                        print("\(contentObject["orbital_period"] as! String)")
-//                        print("\(contentObject["gravity"] as! String)")
 

@@ -19,11 +19,10 @@ class PlanetsData: NSObject,ObservableObject {
     
     var planetOrbitalPeriod : [String] = []
     var planetGravity : [String] = []
-
+    
     static let sharedInstance = PlanetsData()
     
     private override init() {
     }
-    
     
 }

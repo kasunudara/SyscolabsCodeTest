@@ -10,8 +10,8 @@ import SwiftUI
 struct SplashView: View {
     
     @State private var appReadyAnyLounch = StatusData.sharedInstance.isAppReadyFirstLounch
-    let planetsDataPageOneCompleted = NotificationCenter.default.publisher(for: NSNotification.Name("PLANETS_DATA_PAGE_ONE_COMPLETED"))
-
+    let planetsDataPageOneCompleted = NotificationCenter.default.publisher(for: NSNotification.Name(ConfigData.NOTIFICATION_KEYS.initialLoadCompleted))
+    
     var body: some View {
         NavigationView {
             ZStack {
@@ -25,10 +25,9 @@ struct SplashView: View {
                 NotificationCenter.default.removeObserver(self.planetsDataPageOneCompleted)
                 self.appReadyAnyLounch.toggle()
             }
-
+            
         }
     }
-    
     
 }
 

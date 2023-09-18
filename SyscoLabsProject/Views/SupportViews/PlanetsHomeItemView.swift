@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct PlanetsHomeItemView: View {
+    
     let planetName : String
     let planetClimate : String
     var isLast : Bool
@@ -16,7 +17,7 @@ struct PlanetsHomeItemView: View {
     @Binding var willMoveToPlanetsDetailView : Bool
     @Binding var isAnimating : Bool
     @ObservedObject private var planetsHomeViewModel = PlanetsHomeViewModel()
-
+    
     var body: some View {
         VStack {
             HStack {
@@ -52,7 +53,7 @@ struct PlanetsHomeItemView: View {
                 self.planetsHomeViewModel.onScrollPlanetsNextPageLoader(currentPage: self.statusData.currentPageCount)
             }
         }
-    
+        
     }
 }
 
