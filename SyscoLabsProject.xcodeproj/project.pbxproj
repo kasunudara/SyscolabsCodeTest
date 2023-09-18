@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F26378C2AB2F641004350CB /* SyscoLabsProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F26378B2AB2F641004350CB /* SyscoLabsProjectApp.swift */; };
+		3F26378E2AB2F641004350CB /* PlanetsHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F26378D2AB2F641004350CB /* PlanetsHomeView.swift */; };
+		3F2637902AB2F643004350CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F26378F2AB2F643004350CB /* Assets.xcassets */; };
+		3F2637932AB2F643004350CB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F2637922AB2F643004350CB /* Preview Assets.xcassets */; };
+		3F26379F2AB38354004350CB /* PlanetsHomeItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F26379E2AB38354004350CB /* PlanetsHomeItemView.swift */; };
+		3F2637A32AB414C6004350CB /* AppUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2637A22AB414C6004350CB /* AppUtils.swift */; };
+		3F2637A52AB41F19004350CB /* PlanetsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2637A42AB41F19004350CB /* PlanetsDetailView.swift */; };
+		3F5A3EBE2AB4A26F0095168B /* JSONDataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5A3EBD2AB4A26F0095168B /* JSONDataServices.swift */; };
+		3F5A3EC02AB575860095168B /* PlanetsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5A3EBF2AB575860095168B /* PlanetsData.swift */; };
+		3F5A3EC22AB605550095168B /* StatusData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5A3EC12AB605550095168B /* StatusData.swift */; };
+		3F5A3EC42AB60DFA0095168B /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5A3EC32AB60DFA0095168B /* SplashView.swift */; };
+		3F5A3EC62AB651A10095168B /* PlanetsHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5A3EC52AB651A10095168B /* PlanetsHomeViewModel.swift */; };
+		3F5A3EC82AB651C20095168B /* PlanetsDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5A3EC72AB651C20095168B /* PlanetsDetailViewModel.swift */; };
+		3F5A3ECA2AB651DC0095168B /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5A3EC92AB651DC0095168B /* SplashViewModel.swift */; };
+		3F5A3ECC2AB7768B0095168B /* ConfigData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5A3ECB2AB7768B0095168B /* ConfigData.swift */; };
+		3F5A3ECF2AB7833C0095168B /* ActivityIndicatorViewRep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5A3ECE2AB7833C0095168B /* ActivityIndicatorViewRep.swift */; };
+		4B80FBA1F860D2A5693DDA77 /* Pods_SyscoLabsProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D07F539652F97062171BBB1 /* Pods_SyscoLabsProject.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D07F539652F97062171BBB1 /* Pods_SyscoLabsProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SyscoLabsProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F2637882AB2F641004350CB /* SyscoLabsProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SyscoLabsProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F26378B2AB2F641004350CB /* SyscoLabsProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyscoLabsProjectApp.swift; sourceTree = "<group>"; };
+		3F26378D2AB2F641004350CB /* PlanetsHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsHomeView.swift; sourceTree = "<group>"; };
+		3F26378F2AB2F643004350CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3F2637922AB2F643004350CB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3F26379E2AB38354004350CB /* PlanetsHomeItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsHomeItemView.swift; sourceTree = "<group>"; };
+		3F2637A22AB414C6004350CB /* AppUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtils.swift; sourceTree = "<group>"; };
+		3F2637A42AB41F19004350CB /* PlanetsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsDetailView.swift; sourceTree = "<group>"; };
+		3F5A3EBD2AB4A26F0095168B /* JSONDataServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDataServices.swift; sourceTree = "<group>"; };
+		3F5A3EBF2AB575860095168B /* PlanetsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsData.swift; sourceTree = "<group>"; };
+		3F5A3EC12AB605550095168B /* StatusData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusData.swift; sourceTree = "<group>"; };
+		3F5A3EC32AB60DFA0095168B /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		3F5A3EC52AB651A10095168B /* PlanetsHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsHomeViewModel.swift; sourceTree = "<group>"; };
+		3F5A3EC72AB651C20095168B /* PlanetsDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsDetailViewModel.swift; sourceTree = "<group>"; };
+		3F5A3EC92AB651DC0095168B /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		3F5A3ECB2AB7768B0095168B /* ConfigData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigData.swift; sourceTree = "<group>"; };
+		3F5A3ECE2AB7833C0095168B /* ActivityIndicatorViewRep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorViewRep.swift; sourceTree = "<group>"; };
+		65AE60CAA9233610D1AA89A0 /* Pods-SyscoLabsProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SyscoLabsProject.release.xcconfig"; path = "Target Support Files/Pods-SyscoLabsProject/Pods-SyscoLabsProject.release.xcconfig"; sourceTree = "<group>"; };
+		DDA172FC6B2C50295A766DD6 /* Pods-SyscoLabsProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SyscoLabsProject.debug.xcconfig"; path = "Target Support Files/Pods-SyscoLabsProject/Pods-SyscoLabsProject.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F2637852AB2F641004350CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B80FBA1F860D2A5693DDA77 /* Pods_SyscoLabsProject.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F26377F2AB2F640004350CB = {
+			isa = PBXGroup;
+			children = (
+				3F26378A2AB2F641004350CB /* SyscoLabsProject */,
+				3F2637892AB2F641004350CB /* Products */,
+				FFB1930CEF4F16C123FF9121 /* Pods */,
+				B7F37F859BC9420137486B03 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3F2637892AB2F641004350CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F2637882AB2F641004350CB /* SyscoLabsProject.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F26378A2AB2F641004350CB /* SyscoLabsProject */ = {
+			isa = PBXGroup;
+			children = (
+				3F26378B2AB2F641004350CB /* SyscoLabsProjectApp.swift */,
+				3F2637A12AB3AAF0004350CB /* AppConfigs */,
+				3F2637A02AB3AAC9004350CB /* AppUtils */,
+				3F2637992AB34F46004350CB /* Views */,
+				3F26379C2AB34FAF004350CB /* Services */,
+				3F26379B2AB34F87004350CB /* ViewModels */,
+				3F26379A2AB34F65004350CB /* Models */,
+				3F26378F2AB2F643004350CB /* Assets.xcassets */,
+				3F2637912AB2F643004350CB /* Preview Content */,
+			);
+			path = SyscoLabsProject;
+			sourceTree = "<group>";
+		};
+		3F2637912AB2F643004350CB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3F2637922AB2F643004350CB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3F2637992AB34F46004350CB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3F5A3ECD2AB783150095168B /* RepresentableViews */,
+				3F5A3EC32AB60DFA0095168B /* SplashView.swift */,
+				3F26378D2AB2F641004350CB /* PlanetsHomeView.swift */,
+				3F2637A42AB41F19004350CB /* PlanetsDetailView.swift */,
+				3F26379D2AB37745004350CB /* SupportViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3F26379A2AB34F65004350CB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3F5A3EBF2AB575860095168B /* PlanetsData.swift */,
+				3F5A3EC12AB605550095168B /* StatusData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3F26379B2AB34F87004350CB /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				3F5A3EC52AB651A10095168B /* PlanetsHomeViewModel.swift */,
+				3F5A3EC72AB651C20095168B /* PlanetsDetailViewModel.swift */,
+				3F5A3EC92AB651DC0095168B /* SplashViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		3F26379C2AB34FAF004350CB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3F5A3EBD2AB4A26F0095168B /* JSONDataServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3F26379D2AB37745004350CB /* SupportViews */ = {
+			isa = PBXGroup;
+			children = (
+				3F26379E2AB38354004350CB /* PlanetsHomeItemView.swift */,
+			);
+			path = SupportViews;
+			sourceTree = "<group>";
+		};
+		3F2637A02AB3AAC9004350CB /* AppUtils */ = {
+			isa = PBXGroup;
+			children = (
+				3F2637A22AB414C6004350CB /* AppUtils.swift */,
+			);
+			path = AppUtils;
+			sourceTree = "<group>";
+		};
+		3F2637A12AB3AAF0004350CB /* AppConfigs */ = {
+			isa = PBXGroup;
+			children = (
+				3F5A3ECB2AB7768B0095168B /* ConfigData.swift */,
+			);
+			path = AppConfigs;
+			sourceTree = "<group>";
+		};
+		3F5A3ECD2AB783150095168B /* RepresentableViews */ = {
+			isa = PBXGroup;
+			children = (
+				3F5A3ECE2AB7833C0095168B /* ActivityIndicatorViewRep.swift */,
+			);
+			path = RepresentableViews;
+			sourceTree = "<group>";
+		};
+		B7F37F859BC9420137486B03 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1D07F539652F97062171BBB1 /* Pods_SyscoLabsProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FFB1930CEF4F16C123FF9121 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DDA172FC6B2C50295A766DD6 /* Pods-SyscoLabsProject.debug.xcconfig */,
+				65AE60CAA9233610D1AA89A0 /* Pods-SyscoLabsProject.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F2637872AB2F641004350CB /* SyscoLabsProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F2637962AB2F643004350CB /* Build configuration list for PBXNativeTarget "SyscoLabsProject" */;
+			buildPhases = (
+				07D2B1FBAE00C58E3915B8B5 /* [CP] Check Pods Manifest.lock */,
+				3F2637842AB2F641004350CB /* Sources */,
+				3F2637852AB2F641004350CB /* Frameworks */,
+				3F2637862AB2F641004350CB /* Resources */,
+				43D8C254ACDF337775E44581 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SyscoLabsProject;
+			productName = SyscoLabsProject;
+			productReference = 3F2637882AB2F641004350CB /* SyscoLabsProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F2637802AB2F641004350CB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					3F2637872AB2F641004350CB = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 3F2637832AB2F641004350CB /* Build configuration list for PBXProject "SyscoLabsProject" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3F26377F2AB2F640004350CB;
+			productRefGroup = 3F2637892AB2F641004350CB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F2637872AB2F641004350CB /* SyscoLabsProject */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F2637862AB2F641004350CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F2637932AB2F643004350CB /* Preview Assets.xcassets in Resources */,
+				3F2637902AB2F643004350CB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07D2B1FBAE00C58E3915B8B5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SyscoLabsProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		43D8C254ACDF337775E44581 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SyscoLabsProject/Pods-SyscoLabsProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SyscoLabsProject/Pods-SyscoLabsProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SyscoLabsProject/Pods-SyscoLabsProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F2637842AB2F641004350CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F26378E2AB2F641004350CB /* PlanetsHomeView.swift in Sources */,
+				3F5A3EC22AB605550095168B /* StatusData.swift in Sources */,
+				3F26378C2AB2F641004350CB /* SyscoLabsProjectApp.swift in Sources */,
+				3F5A3ECA2AB651DC0095168B /* SplashViewModel.swift in Sources */,
+				3F5A3EC82AB651C20095168B /* PlanetsDetailViewModel.swift in Sources */,
+				3F26379F2AB38354004350CB /* PlanetsHomeItemView.swift in Sources */,
+				3F5A3EBE2AB4A26F0095168B /* JSONDataServices.swift in Sources */,
+				3F5A3EC02AB575860095168B /* PlanetsData.swift in Sources */,
+				3F5A3ECC2AB7768B0095168B /* ConfigData.swift in Sources */,
+				3F5A3ECF2AB7833C0095168B /* ActivityIndicatorViewRep.swift in Sources */,
+				3F2637A52AB41F19004350CB /* PlanetsDetailView.swift in Sources */,
+				3F5A3EC62AB651A10095168B /* PlanetsHomeViewModel.swift in Sources */,
+				3F2637A32AB414C6004350CB /* AppUtils.swift in Sources */,
+				3F5A3EC42AB60DFA0095168B /* SplashView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3F2637942AB2F643004350CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3F2637952AB2F643004350CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3F2637972AB2F643004350CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDA172FC6B2C50295A766DD6 /* Pods-SyscoLabsProject.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SyscoLabsProject/Preview Content\"";
+				DEVELOPMENT_TEAM = 52PAX89RLV;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = syscolabs.SyscoLabsProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3F2637982AB2F643004350CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65AE60CAA9233610D1AA89A0 /* Pods-SyscoLabsProject.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SyscoLabsProject/Preview Content\"";
+				DEVELOPMENT_TEAM = 52PAX89RLV;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = syscolabs.SyscoLabsProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F2637832AB2F641004350CB /* Build configuration list for PBXProject "SyscoLabsProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F2637942AB2F643004350CB /* Debug */,
+				3F2637952AB2F643004350CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F2637962AB2F643004350CB /* Build configuration list for PBXNativeTarget "SyscoLabsProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F2637972AB2F643004350CB /* Debug */,
+				3F2637982AB2F643004350CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3F2637802AB2F641004350CB /* Project object */;
+}
