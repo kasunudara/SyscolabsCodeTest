@@ -12,11 +12,11 @@ class SplashViewModel : ObservableObject {
     let jsonDataHandlling = JSONDataServices()
 
     
-//    func firstPlanetsPageLoader () {
-//        self.jsonDataHandlling.getSinglePlanetPageData(pageUrl: ConfigData.URLS.baseURL, currentPageCount: nil) {
-//            NotificationCenter.default.post(name: Notification.Name("PLANETS_DATA_NEXT_PAGE_COMPLETED"), object: nil)
-//        }
-//    }
+    func firstPlanetsPageLoader () {
+        self.jsonDataHandlling.getAllPlanetsData(pageUrl: ConfigData.URLS.baseURL) {
+            NotificationCenter.default.post(name: Notification.Name("PLANETS_DATA_PAGE_ONE_COMPLETED"), object: nil)
+        }
+    }
     
 }
 

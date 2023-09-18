@@ -13,8 +13,8 @@ class JSONDataServices {
     let planetsData = PlanetsData.sharedInstance
     
     //MARK: - Get Planet data for first loading
-    func getAllPlanetsData() {
-        AF.request(ConfigData.URLS.baseURL, method: .get, parameters: nil, encoding: URLEncoding.default, headers: nil, interceptor: nil).responseJSON { response in
+    func getAllPlanetsData(pageUrl:String,completion: @escaping () -> Void) {
+        AF.request(pageUrl, method: .get, parameters: nil, encoding: URLEncoding.default, headers: nil, interceptor: nil).responseJSON { response in
             switch response.result {
             case .success(let data):
                 let jsonDictionary = data as! NSDictionary
@@ -27,7 +27,7 @@ class JSONDataServices {
                         self.planetsData.planetOrbitalPeriod.append(contentObject["orbital_period"] as! String)
                         self.planetsData.planetGravity.append(contentObject["gravity"] as! String)
                     }
-                    NotificationCenter.default.post(name: Notification.Name("PLANETS_DATA_PAGE_ONE_COMPLETED"), object: nil)
+                    completion()
                 } else {
                     print("Empty Result Array")
                 }

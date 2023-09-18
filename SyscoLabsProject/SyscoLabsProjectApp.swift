@@ -12,8 +12,11 @@ struct SyscoLabsProjectApp: App {
     
     let jsonDataHandlling = JSONDataServices()
     
+    @ObservedObject private var splashViewModel = SplashViewModel()
+
+    
     init() {
-        self.jsonDataHandlling.getAllPlanetsData()
+        self.splashViewModel.firstPlanetsPageLoader()
     }
     
     var body: some Scene {
